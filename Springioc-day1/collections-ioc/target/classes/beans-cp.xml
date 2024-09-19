@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="https://www.springframework.org/schema/beans"
+xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+xmlns:context= "https://www.springframework.org/schema/context"
+
+xsi:schemaLocation=" https://www.springframework.org/schema/context 
+					https://www.springframework.org/schema/context/spring-context.xsd 
+					http://www.springframework.org/schema/beans
+					https://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+
+<context:annotation-config/>
+
+<bean name="LifeCycleBean" class="com.iiht.iocAnnotations.LifeCycleAnnotations">
+	<constructor-agr>
+		
+	</constructor-agr>
+	
+</bean>
+
+
+<!--<bean name="startingPoint" class="com.iiht.iocday2.Point">
+	<constructor-arg name="x" value="0"></constructor-arg>
+	<constructor-arg name="y" value="0"></constructor-arg>
+</bean>
+
+<bean name="endingPoint" class="com.iiht.iocday2.Point">
+	<property name="x" value="5"></property>
+	<property name="y" value="5"></property>
+</bean>
+
+<bean name="javaTeam" class="com.iiht.iocday2.Line" autowire="byName">
+	
+</bean>-->
+
+</beans>

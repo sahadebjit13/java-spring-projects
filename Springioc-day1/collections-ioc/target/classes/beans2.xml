@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+<bean name="startingPoint" class="com.iiht.iocday2.Point">
+	<constructor-arg name="x" value="0"></constructor-arg>
+	<constructor-arg name="y" value="0"></constructor-arg>
+</bean>
+
+<bean name="endingPoint" class="com.iiht.iocday2.Point">
+	<property name="x" value="5"></property>
+	<property name="y" value="5"></property>
+</bean>
+
+<bean name="javaTeam" class="com.iiht.iocday2.Line" autowire="byName">
+	
+</bean>
+
+</beans>
